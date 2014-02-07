@@ -1,4 +1,4 @@
-##App Seed:##
+##Chrome Extension Seed:##
 
 Download the chrome-extension-seed.
 
