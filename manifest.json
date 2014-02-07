@@ -1,65 +1,31 @@
 {
 	"manifest_version": 2,
-	"name": "Test for - Seed App",
+	"name": "Testing framework for chrome extension",
 	"version": "0.0.0.1",
-	"description": "U browser seed app",
+	"description": "Testing framework for chrome extension",
 	"minimum_chrome_version": "27.0.1453.116",
-	"minimum_u_version": "1.4.2702.0",
 	"background": {
 		"page": "resources/background.html"
+	},
+	"browser_action": {
+		"default_icon": {
+			"19": "resources/extension-icon.png",
+			"38": "resources/extension-icon.png"
+		},
+		"default_popup": "resources/popup.html"
 	},
 	"permissions": [
 		"management",
 		"notifications",
-		"cardview",
 		"http://localhost/*",
 		"storage",
 		"file:///*",
-		"u.channels",
-		"u.listen",
-		"u.statistics",
-		"u.sidebar",
-		"u.system",
-		"u.platform",
-		"u.system.environment",
-		"u.system.general",
-		"u.sidebar.general",
-		"u.sidebar.actions",
-		"u.fullview",
 		"tabs"
 	],
 	"icons": {
 		"32": "resources/extension-icon.png",
 		"48": "resources/extension-icon.png",
 		"128": "resources/extension-icon.png"
-	},
-	"smartapp": {
-		"icons": {
-			"large": "app/icons/large.png",
-			"mini": "app/icons/small.png"
-		},
-		"home": {
-			"url": "resources/always-on.html",
-			"app_icon": "app/icons/icon.png",
-			"off_state_image": "app/icons/small.png"
-		},
-		"quick_view": {
-			"url": "app/views/quick-view.html"
-		},
-		"full_view": {
-			"url": "resources/full-view.html",
-			"width": 800,
-			"height": 400,
-			"title_image": "app/icons/logo.png"
-		},
-		"gadgets": [
-			{
-				"url": "resources/full-view.html",
-				"is_promoted": "true",
-				"icon": "app/icons/small.png",
-				"channel": "listen"
-			}
-		]
 	},
 	"content_security_policy": "default-src 'self' * 'unsafe-inline' 'unsafe-eval' ; object-src 'self'; script-src 'self' https://ssl.google-analytics.com",
 	"web_accessible_resources": [ "/resources/*" ]

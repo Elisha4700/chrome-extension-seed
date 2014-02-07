@@ -3,9 +3,6 @@
 
 	console.log("Test application is running");
 
-	// Notifies the Framework that this app has loaded and ready to go!
-	chrome.u.sidebar.actions.finishedLoading();
-
 	var testTab = null,
 		testUrl = chrome.extension.getURL('tests/specRunner.html'),
 		detaltConfig = {
