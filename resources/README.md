@@ -1,0 +1,1 @@
+This directory contains all resources needed to run the test app as an extension.

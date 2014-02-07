@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en-US" ng-app="test-runner" ng-csp>
+<head>
+	<meta charset="UTF-8">
+	<title>Full View</title>
+	<link rel="stylesheet" href="full-view.css"/>
+	<script type="text/javascript" src="../app/scripts/lib/angular.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</head>
+<body ng-controller="MainCtrl">
+
+	<p>
+		<label>
+			<input type="checkbox" ng-model="notifications.showPass" ng-change="onPassChange()"/>
+			Show <span class="green">passing</span> notifications
+		</label>
+	</p>
+	<p>
+		<label>
+			<input type="checkbox" ng-model="notifications.showFail" ng-change="onFailChange()"/>
+			Show <span class="red">failing</span> notifications
+		</label>
+	</p>
+
+</body>
+</html>

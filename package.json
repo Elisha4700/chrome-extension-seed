@@ -1,0 +1,19 @@
+{
+  "name": "testapp",
+  "version": "0.0.1",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": ""
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-crx": "~0.2.0",
+    "socket.io": "~0.9.16"
+  },
+  "author": "Elishas4700",
+  "license": "BSD"
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="seed-app" ng-csp>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" href="../css/general.css"/>
+	<link rel="stylesheet" href="../css/quick-view.css"/>
+
+	<!-- Config -->
+	<script src="../scripts/common/config.js"></script>
+	<script src="../scripts/common/event-bus.js"></script>
+
+	<!-- libs & modules -->
+	<script src="../scripts/lib/angular.min.js"></script>
+
+	<!-- Application bootstrap -->
+	<script src="../scripts/apps/QuickViewApp.js"></script>
+
+	<!-- Services -->
+
+	<!-- Controllers -->
+	<script src="../scripts/controllers/QuickViewCtrl.js"></script>
+
+	<!-- Directives -->
+
+</head>
+
+<body ng-controller="QuickViewCtrl">
+
+	<div class="top-strip">
+		<div class="logo" ng-click="onLogoClick()"></div>
+	</div>
+	<p>Hello ~ Quick View!</p>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+@import "globals";
+
+body{
+	width: 1024px;
+	height: 700px;
+	padding: 0;
+	margin: 0;
+
+	/////////////////////////
+	// TODO: remove!
+	border: 1px solid white;
+	box-sizing: border-box;
+	p{
+		// deliberately made hideous: so that you'll remove it as you see it!
+		padding-top: 310px;
+		font-size: 45px;
+		text-align: center;
+		color: #BADA55;
+		text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.6);
+	}
+	/////////////////////////
+}

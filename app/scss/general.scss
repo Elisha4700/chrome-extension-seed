@@ -1,0 +1,10 @@
+@import "fonts";
+@import "globals";
+@import "reset";
+@import "splash";
+
+body{
+	font-family: OpenSans;
+}
+
+[ng-cloak]{ display: none; }
