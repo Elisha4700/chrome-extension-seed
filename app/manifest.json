@@ -1,31 +1,17 @@
 {
 	"manifest_version": 2,
-	"name": "U Seed App",
-	"version": "1.5.0.0",
-	"description": "U browser seed app",
+	"name": "Chrome extension seed",
+	"version": "0.0.1",
+	"description": "Starting point for creating your own chrome extension",
 	"default_locale": "en",
-	"minimum_chrome_version": "27.0.1453.116",
-	"minimum_u_version": "1.4.2702.0",
 	"background": {
 		"page": "background/background.html"
 	},
 	"permissions": [
 		"management",
-		"cardview",
 		"http://localhost/*",
 		"storage",
 		"file:///*",
-		"u.channels",
-		"u.listen",
-		"u.statistics",
-		"u.sidebar",
-		"u.system",
-		"u.platform",
-		"u.system.environment",
-		"u.system.general",
-		"u.sidebar.general",
-		"u.sidebar.actions",
-		"u.fullview",
 		"tabs"
 	],
 	"icons": {
@@ -33,45 +19,6 @@
 		"48": "icons/extension-icon.png",
 		"128": "icons/extension-icon.png"
 	},
-	"smartapp": {
-		"icons": {
-			"large": "icons/large.png",
-			"mini": "icons/small.png"
-		},
-		"home": {
-			"url": "views/always-on.html",
-			"app_icon": "icons/icon.png",
-			"off_state_image": "icons/small.png"
-		},
-		"quick_view": {
-			"url": "views/quick-view.html"
-		},
-		"full_view": {
-			"url": "views/full-view.html",
-			"width": 1024,
-			"height": 700,
-			"title_image": "icons/logo.png"
-		},
-		"gadgets": [
-			{
-				"url": "views/always-on.html",
-				"is_promoted": "true",
-				"icon": "icons/small.png",
-				"channel": "listen"
-			}
-		]
-	},
 	"content_security_policy": "default-src 'self' * 'unsafe-inline' 'unsafe-eval'; object-src 'self'; script-src 'self' https://ssl.google-analytics.com",
-	"web_accessible_resources": [
-		"/img/*",
-		"img/*",
-		"/icons/*",
-		"icons/*",
-		"icons/notification-icon.png",
-		"icons/extension-icon.png",
-		"icons/play-icon-hover.png",
-		"icons/play-icon.png",
-		"icons/small.png",
-		"icons/large.png"
-	]
+	"web_accessible_resources": [ "/img/*", "/icons/*" ]
 }
