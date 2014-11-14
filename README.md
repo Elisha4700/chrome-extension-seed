@@ -16,7 +16,7 @@ Later in the terminal run:
 After running the grunt w command in the terminal, turn on (or refresh) the test application in the browser - it will open a socket to the socket server.
 
 
-####Alreay have an application...?
+####Already have an application...?
 Download this source of this project and paste your application code inside the `app` directory
 
 Now you are good to go! every time a .js file is saved, the test app will run all the tests.
